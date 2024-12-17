@@ -1,0 +1,690 @@
+/* Police d'écriture */
+
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+input,select {
+    border-radius: 12px 0 12px 0 !important;
+}
+
+/* *Barre de Navigation + Side Bar */
+.couleur-nav {
+    background-color: white;
+    border-bottom: 4px solid #95AD98;
+}
+
+.btnDeconnexion {
+    font-size: 15px;
+}
+
+.btnDeconnexion:hover {
+    color: #95AD98;
+}
+.logo-barnav {
+    width: 100px;
+
+}
+.couleur-side-nav {
+    background-color: #1D5025;
+}
+
+.nav-link-side:hover {
+    color: #95AD98 !important;
+}
+
+
+
+.img-prod-BackOffice {
+    width: 40px !important;
+}
+.BorderCardLivraion{
+    border-radius: 20px 0 20px 0 !important;
+    background: linear-gradient(195deg, rgba(29, 80, 37, 0.613) -1.46%, rgba(29, 80, 37, 0.835) 38.96%);
+    color: white;
+}
+
+.card-img-top{
+    width: 100px;
+    margin: auto;
+}
+/* Page D'accueil */
+.cardTitle-accueil {
+    border: 2px solid white;
+    border-radius: 27px 0 27px 0;
+    background: linear-gradient(195deg, rgba(29, 80, 37, 0.613) -1.46%, rgba(29, 80, 37, 0.835) 38.96%);
+    color: white;
+    box-shadow: 0px 0px 22px black;
+    height: 210px;
+    margin-top: 5px;
+    margin-bottom: 100px;
+}
+
+.card-accueil {
+    border: 2px solid white;
+    border-radius: 27px 0 27px 0;
+    background: linear-gradient(195deg, rgba(29, 80, 37, 0.613) -1.46%, rgba(29, 80, 37, 0.835) 38.96%);
+    color: white;
+    box-shadow: 0px 0px 22px black;
+}
+
+.card-link {
+    border-radius: 107px 0 107px 0;
+    width: 18rem;
+    height: 20rem;
+    border: 2px solid white;
+    background: linear-gradient(195deg, rgba(29, 80, 37, 0.83) -1.46%, rgba(76, 113, 82, 0.83) 38.96%);
+    box-shadow: 10px 14px 51px 8px rgb(0, 0, 0);
+    margin-top: 100px;
+}
+
+.spanLinkCard {
+    background-color: inherit;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 25%;
+    height: 100%;
+    margin-top: 25px;
+}
+
+.icon-CardLink {
+    margin-left: 6px;
+}
+
+.Btn-Card {
+    position: relative;
+    top: 30px;
+    border: 1px solid white;
+    width: 50%;
+    border-radius: 107px 0 107px 0;
+    margin-left: 20%;
+    margin-top: 25%;
+    color: white;
+    padding: 10px;
+    background: linear-gradient(to top right, #1D5025, #95AD98);
+    transition: .5s;
+}
+
+.Btn-CardAdmin {
+    position: relative;
+    bottom: 10px;
+    border: 1px solid white;
+    width: 50%;
+    border-radius: 107px 0 107px 0;
+    margin-left: 20%;
+    margin-top: 25%;
+    color: white;
+    padding: 10px;
+    background: linear-gradient(to top right, #1D5025, #95AD98);
+    transition: .5s;
+}
+
+.Btn-Card:hover,
+.Btn-CardAdmin:hover {
+    background: linear-gradient(to top right, #95AD98, #1D5025);
+    border: 1px solid white;
+    color: rgb(183, 183, 183);
+}
+
+/* ================================================ */
+
+/*Début  Formulaire de connexion et Inscription */
+.bodyFormCoEtInscription {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80vh;
+}
+
+.containerFormInscriptionConnexion {
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
+    width: 780px;
+    max-width: 100%;
+    min-height: 635px;
+}
+
+.containerFormInscriptionConnexion p {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 20px 0;
+}
+
+.containerFormInscriptionConnexion a {
+    color: #333;
+    font-size: 13px;
+    text-decoration: none;
+    margin: 15px 0 10px;
+}
+
+.containerFormInscriptionConnexion button {
+    background-color: #95AD98;
+    color: #fff;
+    font-size: 12px;
+    padding: 13px 8px;
+    border: 1px solid transparent;
+    border-radius: 12px 0 12px 0;
+    font-weight: 600;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+    
+}
+
+.containerFormInscriptionConnexion button:hover {
+    color: #333;
+    -webkit-animation: btnjump 0.8s;
+    animation: btnjump 0.8s;
+}
+
+.containerFormInscriptionConnexion button.hidden {
+    background-color: transparent;
+    border-color: #fff;
+}
+
+.containerFormInscriptionConnexion form {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.containerFormInscriptionConnexion input {
+    background: #eee;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 10px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+
+.form-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6 ease-in-out;
+}
+
+.sign-in {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+.containerFormInscriptionConnexion.active .sign-in {
+    transform: translateX(100%);
+}
+
+.sign-up {
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.containerFormInscriptionConnexion.active .sign-up {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    animation: move 0.6s ease-in-out;
+}
+
+.toggle-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+    border-radius: 0 0 0 150px;
+    z-index: 1000;
+}
+
+.containerFormInscriptionConnexion.active .toggle-container {
+    transform: translateX(-100%);
+    border-radius: 0 150px 0 0;
+}
+
+.toggle {
+    height: 100%;
+    background: linear-gradient(to top right, #1D5025, #95AD98);
+    color: white;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.containerFormInscriptionConnexion.active .toggle {
+    transform: translateX(50%);
+    transition: all 0.6s ease-in-out;
+}
+
+.toggle-panel {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    text-align: center;
+    top: 0;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.toggle-left {
+    transform: translateX(-200%);
+}
+
+.containerFormInscriptionConnexion.active .toggle-left {
+    transform: translateX(0);
+}
+
+.toggle-right {
+    right: 0;
+    transform: translateX(0);
+}
+
+.containerFormInscriptionConnexion.active .toggle-right {
+    transform: translateX(200%);
+}
+
+/*Fin  Formulaire de connexion et Inscription */
+/* Panier */
+
+.cacher{
+    display: none;
+}
+/* Panier */
+/* ========================================== */
+
+/* Formulaire Du Profil d'utilisateur */
+.feuille-contact {
+    width: 100% !important;
+    border: 2px solid rgb(255, 255, 255) !important;
+    border-radius: 100px 0 100px 0 !important;
+    background: linear-gradient(to top right, #1D5025, #95AD98);
+    color: white !important;
+    box-shadow: 0px 0px 22px black !important;
+    padding: 17px;
+}
+/* ========================================== */
+
+/* Formulaire de Contact */
+.box-contact {
+    border-radius: 50px 0 50px 0 !important;
+    background: linear-gradient(to top right, #1D5025, #95AD98) !important;
+    border: 1px solid black;
+    box-shadow: 0px 0 20px 0 black;
+}
+
+.background-formulaire {
+    border-radius: 15px 0 0 0 !important;
+    border-right: 2px solid #1D5025;
+}
+
+
+/* ========================================== */
+
+/* ============================================ */
+/* ======= Début du Back Office du site ======= */
+/* ============================================ */
+
+/* Button des ajout tableau */
+.btnDesAjouts {
+    background-color: #95AD98;
+    color: rgb(67, 67, 67);
+    border-radius: 12px 0 12px 0;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.btnAfficherListProd {
+    border: 1px solid white;
+    width: 100%;
+    border-radius: 107px 0 107px 0;
+    color: white;
+    background: linear-gradient(to top right, #1D5025, #95AD98);
+    transition: .5s;
+
+}
+
+.btnAfficherListProd:hover {
+    background: linear-gradient(to top right, #ffffff9c, #95AD98) !important;
+    color: #1D5025;
+}
+
+.btnDesAjouts:hover {
+    background-color: #95AD98;
+    color: #1D5025;
+    -webkit-animation: btnjump 0.8s;
+    animation: btnjump 0.8s;
+}
+
+/* Button des actions tableau */
+.btnTab {
+    background-color: #95AD98;
+    color: white;
+    border-radius: 12px 0 12px 0;
+    transition: 0.2s;
+}
+
+.btnTab:hover {
+    background-color: #95AD98;
+    color: rgb(67, 67, 67);
+    -webkit-animation: btnjump 0.8s;
+    animation: btnjump 0.8s;
+}
+
+/* Design des Modales */
+.modalDesign {
+    border-radius: 20px 0 20px 0 !important;
+    background: linear-gradient(to top right, #1D5025, #95AD98);
+    color: white;
+}
+
+/* Design des Modales */
+
+/* =========================================== */
+
+/* Modal Livraison de stock client */
+.textbox {
+    width: 100%;
+    background-color: white;
+    border-radius: 12px 0 12px 0;
+    color: #333;
+    height: 35px;
+    padding: 2px;
+}
+
+/* ============================================ */
+/* ======== Fin du Back Office du site ======== */
+/* ============================================ */
+
+/* =========================================== */
+
+/* =========================================== */
+/* ========= Début du Footer Du Site ========= */
+/* =========================================== */
+.bg-footer {
+    border-top: 4px solid #95AD98;
+    background-color: white;
+}
+
+/* =========================================== */
+/* ======= Début du Responsive Du Site ======= */
+/* =========================================== */
+
+/*Début du Reponsive */
+@media (max-width: 962px) {
+
+    /* Début Side-Bar */
+    .supvhmobile-side {
+        min-height: 0vh !important;
+        align-items: center !important;
+    }
+
+    .btnBurger {
+        position: relative;
+        left: 20px;
+    }
+
+    /* Fin Side-Bar */
+    /* ===================== */
+    /*Début  Page D'accueil */
+    .cardTitle-accueil {
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    /* Début des card client */
+    .card-accueil {
+        margin-bottom: 10px;
+    }
+
+    .card-linkBox {
+        display: flex !important;
+        align-items: center !important;
+        flex-direction: column !important;
+        margin-top: 0px !important;
+        margin-bottom: 2px !important;
+    }
+
+    .card-link {
+        margin-top: 0px !important;
+        margin-bottom: 50px !important;
+        height: 260px;
+    }
+
+    .icon-CardLink {
+        width: 100%;
+        font-size: 30px !important;
+        position: relative;
+        top: 10px;
+        left: 5px;
+    }
+
+    .Btn-Card {
+        position: relative;
+        top: 0px;
+    }
+
+    /* Fin des card client */
+    /*Fin  Page D'accueil */
+
+    /*Début du  Back Office */
+    /* Button des ajout tableau */
+    .btnDesAjouts {
+        font-size: 12px;
+    }
+
+    /* Formulaire de contact */
+    .logoContact {
+        width: 150px;
+        margin-top: 5px !important;
+    }
+
+    .box-contact {
+        margin: 0 !important;
+        padding: 0 !important;
+        border-radius: 0 0 0 0 !important;
+    }
+
+    .background-formulaire {
+        border-right: 0;
+    }
+    .previews img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.img-prod-BackOffice {
+    width: 100px !important;
+    margin: auto;
+}
+
+/* Fin du Responsive */
+
+/* =========================================== */
+/* ======== Début des Annimations CSS ======== */
+/* =========================================== */
+/*  Annimation Connexion Inscription */
+@keyframes move {
+
+    0%,
+    49.99% {
+        opacity: 0;
+        z-index: 1;
+    }
+
+    50%,
+    100% {
+        opacity: 1;
+        z-index: 5;
+    }
+}
+
+/* ========================================== */
+/* Annimation des bouttons */
+/*  */
+
+@keyframes btnjump {
+
+    0%,
+    11.1%,
+    to {
+        transform: translateZ(0);
+    }
+
+    22.2% {
+        transform: skewX(-12.5deg) skewY(-12.5deg);
+    }
+
+    33.3% {
+        transform: skewX(6.25deg) skewY(6.25deg);
+    }
+
+    44.4% {
+        transform: skewX(-3.125deg) skewY(-3.125deg);
+    }
+
+    55.5% {
+        transform: skewX(1.5625deg) skewY(1.5625deg);
+    }
+
+    66.6% {
+        transform: skewX(-0.78125deg) skewY(-0.78125deg);
+    }
+
+    77.7% {
+        transform: skewX(0.390625deg) skewY(0.390625deg);
+    }
+
+    88.8% {
+        transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+    }
+}
+
+/* ========================================== */
+/*Fin des  Annimations Css */
+
+
+.text-bold {
+    font-weight: 800;
+}
+
+text-color {
+    color: #0093c4;
+}
+
+/* Main image - left */
+.main-img img {
+    width: 380px;
+}
+
+/* Preview images */
+.main-description .category {
+    text-transform: uppercase;
+    color: #0093c4;
+}
+
+.main-description .product-title {
+    font-size: 2.5rem;
+}
+
+.old-price-discount {
+    font-weight: 600;
+}
+
+.new-price {
+    font-size: 2rem;
+}
+
+.details-title {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #757575;
+}
+
+.buttons .block {
+    margin-right: 5px;
+}
+
+.quantity input {
+    border-radius: 0;
+    height: 40px;
+
+}
+
+
+.custom-btn {
+    text-transform: capitalize;
+    background-color: #0093c4;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 0;
+}
+
+.custom-btn:hover {
+    background-color: #0093c4 !important;
+    font-size: 18px;
+    color: white !important;
+}
+
+.similar-product img {
+    height: 400px;
+}
+
+.similar-product {
+    text-align: left;
+}
+
+.similar-product .title {
+    margin: 17px 0px 4px 0px;
+}
+
+.similar-product .price {
+    font-weight: bold;
+}
+
+.questions .icon i {
+    font-size: 2rem;
+}
+
+.questions-icon {
+    font-size: 2rem;
+    color: #0093c4;
+}
+.CardDesc{
+    
+    border: 2px solid white;
+    padding: 30px;
+    border-radius: 12px 0 12px 0;
+    box-shadow: 0 0 21px 2px #333;
+}
+
+
+/* Small devices (landscape phones, less than 768px) */
