@@ -6,3 +6,4 @@ masterminds
 phenx
 shuchkin
 ATTENTION A RESPECTER LA STRUCTURE MVC
+Le fichier .loo est a ouvrir avec le logiciel looping
